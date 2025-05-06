@@ -1,7 +1,12 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
+// if you're using TS:
 export default defineConfig({
-  plugins: [react()],
+  plugins: [
+    react({
+      // tell the plugin to treat `.js` as JSX
+      include: ['**/*.jsx', '**/*.tsx', '**/*.js'],
+    }),
+  ],
 })
