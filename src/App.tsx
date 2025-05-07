@@ -15,15 +15,9 @@ import Home from './pages/Home';
 import MatchDetail from './pages/MatchDetail';
 import AdminMatch from './pages/AdminMatch';
 
-
-
-
-
-
-
 function App() {
   return (
-    <Router>
+    <Router basename="/TorneoApp">
       <Navbar />
       <Routes>
         <Route path="/" element={<Schedule />} />
