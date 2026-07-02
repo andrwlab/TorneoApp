@@ -1,54 +1,168 @@
-# React + TypeScript + Vite
+# TorneoApp — School Tournament Management App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+**TorneoApp** was the first version of a web application built to support the operations of a school volleyball tournament.
 
-Currently, two official plugins are available:
+The goal was simple: replace manual tournament tracking with a digital workflow where students, staff and organizers could view fixtures, results, standings and player statistics from a public web interface.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+This project became the foundation for a more advanced second version: **Season2App**.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+## Live Demo
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
+**Season 1 App:**  
+https://andrwlab.github.io/TorneoApp/
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+**Next Iteration — Season2App:**  
+https://andrwlab.github.io/Season2App/
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+---
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+## Project Context
+
+The tournament workflow originally required manual tracking of:
+
+- Match schedules
+- Team results
+- Standings
+- Player statistics
+- Leaderboards
+- Result updates after each game
+
+TorneoApp was built to centralize that information and make the tournament easier to follow in real time.
+
+This was not just a visual website. It was an early internal tool designed around a real operational need: keeping tournament information organized, updated and accessible.
+
+---
+
+## Problem
+
+Tournament data was difficult to manage manually.
+
+Organizers needed a way to:
+
+- Publish upcoming matches clearly
+- Update results quickly
+- Keep standings visible
+- Track individual player performance
+- Reduce duplicated manual work
+- Improve the experience for students and spectators
+
+---
+
+## Solution
+
+TorneoApp provided a public-facing web app for tournament visibility and basic tournament operations.
+
+The app allowed the tournament to move from scattered manual tracking into a structured digital system.
+
+---
+
+## Key Features
+
+- Public tournament homepage
+- Match schedule / upcoming fixtures
+- Team standings
+- Player leaderboard
+- Result and statistics tracking
+- Firebase-backed data persistence
+- Role-based result/stat entry
+- Web-based access from any device
+
+---
+
+## Tech Stack
+
+- **Frontend:** React, TypeScript, Vite
+- **Backend / Database:** Firebase, Firestore
+- **Authentication:** Firebase Auth
+- **Hosting:** GitHub Pages
+- **Version Control:** Git / GitHub
+
+---
+
+## What This Project Demonstrates
+
+This project demonstrates my ability to:
+
+- Identify a manual process that can be improved
+- Translate a real operational need into a working digital tool
+- Build a user-facing web application
+- Structure tournament data for visibility and updates
+- Use Firebase for real-time persistence
+- Iterate based on real users and live tournament needs
+- Deliver a functional tool in a school operations context
+
+---
+
+## Project Outcome
+
+TorneoApp helped organize and present tournament information in a clearer way during the school volleyball tournament.
+
+It served as the first working version of a tournament management workflow and later became the base idea for a more complete second version: **Season2App**.
+
+---
+
+## Evolution: From TorneoApp to Season2App
+
+TorneoApp was the first prototype.
+
+After using it in a real tournament context, several improvement areas became clear:
+
+- Better data structure
+- Cleaner administration flows
+- Stronger support for teams and rosters
+- More complete player statistics
+- Better match detail views
+- Improved season-to-season tracking
+- A more scalable internal-tool approach
+
+Those lessons led to the development of **Season2App**, a more complete tournament operations tool.
+
+---
+
+## Screenshots
+
+> Screenshots should be added here to show the main screens of the app.
+
+Suggested screenshots:
+
+1. Homepage / tournament overview  
+2. Match schedule  
+3. Standings table  
+4. Player leaderboard  
+5. Result/stat entry screen  
+
+---
+
+## Lessons Learned
+
+Building TorneoApp taught me that the hardest part of an internal tool is not only the code.
+
+The real challenge is understanding the workflow:
+
+- Who needs the information?
+- Who updates the data?
+- What needs to be visible publicly?
+- What needs to be protected?
+- How should the data be structured so the system remains useful during the event?
+
+This project helped me connect software development, operations, users and process improvement.
+
+---
+
+## Status
+
+This repository represents the **Season 1 prototype**.
+
+The project is no longer the main version of the tournament system. It is kept as a record of the first working implementation and as a reference point for the evolution toward Season2App.
+
+---
+
+## Author
+
+**Andrew Hall**  
+Control & Automation Engineer focused on applied automation, internal tools and process improvement.
+
+LinkedIn: https://www.linkedin.com/in/andrew-hall-smith  
+GitHub: https://github.com/andrwlab
